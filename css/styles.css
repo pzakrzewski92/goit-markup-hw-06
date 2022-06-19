@@ -791,6 +791,7 @@ margin-bottom: 12px;
 }
 .modal-window-form {
 display: flex;
+flex-direction: column;
 }
 .modal-window-form-label {
     font-size: 12px;
@@ -802,14 +803,20 @@ display: flex;
 .modal-window-form-input {
     display: flex;
     margin-bottom: 10px;
-    max-width: 100%;
+    width: 100%;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(33, 33, 33, 0.2);
     border-image: initial;
     border-radius: 4px;
     padding: 12px 12px 12px 42px;
-    margin-top: 93px;
+    
+}
+.bg-image-name {
+    background-image: url(data:);
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    transition: background-image var(--transition);
 }
 .is-hidden {
     opacity: 0;
