@@ -787,6 +787,13 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
 padding: 40px 40px;
+margin-bottom: 12px;
+}
+.modal-window-form {
+
+}
+.modal-window-form-input {
+    
 }
 .is-hidden {
     opacity: 0;
