@@ -768,6 +768,26 @@ margin-left: 24px;
     transform: scale(100%); 
     opacity: 100%;
     }
+.close-btn-icon {
+    display: flex;
+    margin: auto;
+    width: 11px;
+    height: 11px;
+   fill: #000000;
+}
+.modal-window-h3 {
+    position: absolute;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+padding: 40px 40px;
+}
 .is-hidden {
     opacity: 0;
     visibility: hidden;
