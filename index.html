@@ -407,30 +407,33 @@
     Zostaw swoje dane w formularzu poniżej
 </h3>
 <form class="modal-window-form" name="signup-form" method="post">
-    <label class="modal-window-form-label" for="name">
+    <label class="modal-window-form-label" type="text" for="name">
         Imie
-    </label>
+    
     <input class="modal-window-form-input bg-image-name"
     type="text" name="name"
-    id="phone_number">
+    id="name"/>
+    </label>
     <label class="modal-window-form-label" for="phone_number">
         Telefon
-    </label>
+    
     <input class="modal-window-form-input bg-image-phone"
-    type="text" name="name"
-    id="email">
+    type="tel" name="phone_number" id="phone_number"/>
+    </label>
     <label class="modal-window-form-label" for="email">
         Email
-    </label>
+    
     <input class="modal-window-form-input bg-image-email"
-    type="text" name="name"
-    id="name">
-    <label class="modal-window-form-label" for="comment">
-        Komentarz
+    type="email" name="email" id="email"/>
+    <svg class="modal-icon-contact">
+        <use href="images/icons.svg#icon-icon-envelope-form"></use>
+    </svg>
     </label>
-    <input class="modal-window-form-input"
-    type="text" name="name"
-    id="name">
+    <label class="modal-window-form-input" for="comment">
+        Komentarz</label>
+    <textarea class="modal-window-form-textarea" for="comment"
+    id="comment" placeholder="Wprowadź tekst"></textarea>
+
 
 </form>
 
