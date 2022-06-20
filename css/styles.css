@@ -781,8 +781,8 @@ margin-left: 24px;
 .close-btn-icon {
     display: flex;
     margin: auto;
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
    fill: #000000;
 }
 .modal-window-h3 {
@@ -802,6 +802,7 @@ margin-bottom: 12px;
 .modal-window-form {
 display: flex;
 flex-direction: column;
+padding: 93px 40px;
 }
 .modal-window-form-label {
     font-size: 12px;
@@ -820,6 +821,8 @@ flex-direction: column;
     border-image: initial;
     border-radius: 4px;
     padding: 12px 12px 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
     
 }
 .bg-image-name {
