@@ -1,5 +1,7 @@
 :root {
     --black: #000000;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 * {
     margin: 0px;
@@ -774,7 +776,7 @@ margin-left: 24px;
     cursor: pointer;
     transition-property: opacity, transform; 
     transition-duration: 250ms; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-timing-function: var(--transition); 
     transform: scale(100%); 
     opacity: 100%;
     }
@@ -787,7 +789,6 @@ margin-left: 24px;
 }
 .modal-window-h3 {
     position: absolute;
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -802,7 +803,7 @@ margin-bottom: 12px;
 .modal-window-form {
 display: flex;
 flex-direction: column;
-padding: 93px 40px;
+padding: 93px 40px 40px;
 }
 .modal-window-form-label {
     font-size: 12px;
@@ -846,11 +847,53 @@ height: 18px;
     border-radius: 4px;
     resize: none;
     margin-bottom: 20px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: var(--transition)
+}
+.modal-window-application-signup-form-textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  
+  .bg-image-name {
+    background-image: url(/images/icons.svg#icon-icon-person-form);
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    transition: background-image var(--transition);
+  }
+  
+  .bg-image-name:hover,
+  .bg-image-name:focus,
+  .bg-image-name:active {
+    background-image: url(/images/icons.svg#icon-icon-person-form);
+   }
+  
+  .bg-image-phone {
+    background-image: url(/images/icons.svg#icon-icon-phone-form);
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    transition: background-image var(--transition);
+  }
+  
+  .bg-image-phone:hover,
+  .bg-image-phone:focus,
+  .bg-image-phone:active {
+    background-image: url(/images/icons.svg#icon-icon-phone-form);
+}
+  
+  .bg-image-email {
+    background-image: url(/images/icons.svg#icon-icon-envelope-form);
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    transition: background-image var(--transition);
+  }
+  
+  .bg-image-email:hover,
+  .bg-image-email:focus,
+  .bg-image-email:active {
+    background-image: url(/images/icons.svg#icon-icon-envelope-form);
 }
 .modal-window-form-terms {
     display: inline-flex;
-    ;
     align-items: center;
     align-self: center;
     width: 100%;
@@ -860,6 +903,7 @@ height: 18px;
     color: #757575;
     margin-bottom: 30px;
 }
+
 .modal-window-form-terms a {
     text-decoration: underline;
     color: #2196f3;
@@ -889,12 +933,15 @@ height: 15px;
 margin-right: 8px;
 }
 .modal-window-form-checkbox:checked {
-    background-image: url(/images/icons.svg)
+    background-image: url("/images/icons.svg#icon-icon-checkbox-form")
     width='16' height='15' viewBox='0 0 32 32' fill='none'
     path d="M4 1h24c2.209 0 4 1.791 4 4v22c0 2.209-1.791 4-4 4h-24c-2.209 0-4-1.791-4-4v-22c0-2.209 1.791-4 4-4z"></path>
     path d="M7.914 16.504l-0.138-0.132-0.138 0.13-1.928 1.828 0.152 0.146 7.13 6.8 0.138-0.132 15.16-14.462-0.152-0.144-1.902-1.814-0.138 0.132-13.106 12.492-5.078-4.844z"></path>
     fill: #212121;
+    transition: background-image
 }
+  
+
 .modal-window-form-button {
     align-self: center;
     background-color: #2196F3;
