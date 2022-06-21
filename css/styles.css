@@ -830,6 +830,84 @@ height: 18px;
 
 }
 .modal-window-form-textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    padding: 12px 16px;
+    min-width: 100%;
+    min-height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.modal-window-form-terms {
+    display: inline-flex;
+    ;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.modal-window-form-terms a {
+    text-decoration: underline;
+    color: #2196f3;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.modal-window-form-terms input {
+margin-right: 8px;
+}
+
+.modal-window-form-checkbox {
+    /* Oświadczam iż akceptuję Regulamin i Politykę Prywatności. */
+
+max-width: 395px;
+height: 24px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+letter-spacing: 0.03em;
+color: #757575;
+width: 16px;
+height: 15px;
+margin-right: 8px;
+}
+.modal-window-form-checkbox:checked {
+    background-image: url(/images/icons.svg)
+    width='16' height='15' viewBox='0 0 32 32' fill='none'
+    path d="M4 1h24c2.209 0 4 1.791 4 4v22c0 2.209-1.791 4-4 4h-24c-2.209 0-4-1.791-4-4v-22c0-2.209 1.791-4 4-4z"></path>
+    path d="M7.914 16.504l-0.138-0.132-0.138 0.13-1.928 1.828 0.152 0.146 7.13 6.8 0.138-0.132 15.16-14.462-0.152-0.144-1.902-1.814-0.138 0.132-13.106 12.492-5.078-4.844z"></path>
+    fill: #212121;
+}
+.modal-window-form-button {
+    align-self: center;
+    background-color: #2196F3;
+    border: 0px;
+    border-radius: 4px;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    cursor: pointer;
 
 }
 .is-hidden {
