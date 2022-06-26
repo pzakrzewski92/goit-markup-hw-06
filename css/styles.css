@@ -22,7 +22,8 @@
 }
 .header {
     border-bottom: 1px solid #ececec;
-    padding: 25px 0;
+    padding: 0 15px ;
+    margin: auto;
     height: 80px;
     
 }
@@ -34,6 +35,12 @@
     list-style: none;
     flex-wrap: wrap; 
     height: 100%;
+}
+.header-menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
 }
 
 a {
@@ -133,6 +140,7 @@ color: #757575;
 text-decoration: none;
 align-items: center;
 padding: 10px;
+margin-left: 50px;
 }
 
 .icon-envelope {
