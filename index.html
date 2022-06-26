@@ -414,19 +414,19 @@
     
     <input class="modal-window-form-input bg-image-name"
     type="text" name="name"
-    id="name"/>
+    id="name" required/>
     </label>
     <label class="modal-window-form-label" for="phone_number">
         Telefon
     
     <input class="modal-window-form-input bg-image-phone"
-    type="tel" name="phone_number" id="phone_number"/>
+    type="tel" name="phone_number" id="phone_number" required/>
     </label>
     <label class="modal-window-form-label" for="email">
         Email
     
     <input class="modal-window-form-input bg-image-email"
-    type="email" name="email" id="email"/>
+    type="email" name="email" id="email" required/>
     </label>
     <label class="modal-window-form-label" for="comment">
         Komentarz</label>
@@ -434,8 +434,8 @@
     id="comment" placeholder="Wprowadź tekst"></textarea>
 <label class="modal-window-form-terms" for="terms">
     <input class="modal-window-form-checkbox hidden"
-    name="terms and conditions" type="terms"
-    type="checkbox">
+    name="terms-and-conditions" id="terms-and-conditions"
+    type="checkbox" value="agree">
     Oświadczam iż akceptuję&nbsp;
     <a href="x">Regulamin</a> &nbsp;i&nbsp; 
     <a href="x">Politykę Prywatności.</a>

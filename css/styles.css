@@ -830,6 +830,11 @@ padding: 93px 40px 40px;
     border-radius: 4px;
     
 }
+.modal-window-form-input:focus, .modal-window-form-input:hover,
+.modal-window-form-input:active{
+    border: 1px solid #2196F3;
+border-radius: 4px;
+}
 .modal-icon-contact {
     position: absolute;
 color: #212121;
@@ -860,7 +865,7 @@ height: 18px;
     color: rgba(117, 117, 117, 0.5);
   }
 
-  
+  /*
   .bg-image-name {
     background-image: url(/images/icons.svg#icon-icon-person-form);
     background-repeat: no-repeat;
@@ -898,7 +903,7 @@ height: 18px;
   .bg-image-email:focus,
   .bg-image-email:active {
     background-image: url(/images/icons.svg#icon-icon-envelope-form);
-}
+}*/
 .modal-window-form-terms {
     display: inline-flex;
     align-items: center;
@@ -939,13 +944,21 @@ width: 16px;
 height: 15px;
 margin-right: 8px;
 }
-.modal-window-form-checkbox:checked {
-    background-image: url("/images/icons.svg#icon-icon-checkbox-form")
-    width='16' height='15' viewBox='0 0 32 32' fill='none'
-    path d="M4 1h24c2.209 0 4 1.791 4 4v22c0 2.209-1.791 4-4 4h-24c-2.209 0-4-1.791-4-4v-22c0-2.209 1.791-4 4-4z"></path>
-    path d="M7.914 16.504l-0.138-0.132-0.138 0.13-1.928 1.828 0.152 0.146 7.13 6.8 0.138-0.132 15.16-14.462-0.152-0.144-1.902-1.814-0.138 0.132-13.106 12.492-5.078-4.844z"></path>
-    fill: #212121;
-    transition: background-image
+
+.modal-window-form-terms::before{
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    outline: 1px solid #000;
+}
+.modal-window-form-checkbox:checked + .modal-window-form-terms::before {
+   background-color: #2196F3;
+   border: 3px solid #fff;
+   background-image: url(../images/icon-checkbox-vector.svg);
+}
+.hidden {
+    display: none;
 }
   
 
