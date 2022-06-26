@@ -411,31 +411,39 @@
 <form class="modal-window-form" name="signup-form" method="post">
     <label class="modal-window-form-label" type="text" for="name">
         Imie
-    
-    <input class="modal-window-form-input bg-image-name"
+        <svg class="bg-image-name">
+            <use href="./images/icons.svg#icon-icon-person-form"></use>
+        </svg>
+    <input class="modal-window-form-input"
     type="text" name="name"
     id="name" required/>
     </label>
     <label class="modal-window-form-label" for="phone_number">
         Telefon
-    
-    <input class="modal-window-form-input bg-image-phone"
+        <svg class="bg-image-phone">
+            <use href="./images/icons.svg#icon-icon-phone-form"></use>
+        </svg>
+    <input class="modal-window-form-input"
     type="tel" name="phone_number" id="phone_number" required/>
     </label>
-    <label class="modal-window-form-label" for="email">
+    <label class="modal-window-form-label" for="email" type="email">
         Email
-    
-    <input class="modal-window-form-input bg-image-email"
+        <svg class="bg-image-email">
+            <use href="./images/icons.svg#icon-icon-envelope-form"></use>
+        </svg>
+    <input class="modal-window-form-input"
     type="email" name="email" id="email" required/>
+    
     </label>
     <label class="modal-window-form-label" for="comment">
         Komentarz</label>
     <textarea class="modal-window-form-textarea" for="comment"
     id="comment" placeholder="Wprowadź tekst"></textarea>
-<label class="modal-window-form-terms" for="terms">
+    <label class="modal-window-form-terms" for="terms" name="terms">
     <input class="modal-window-form-checkbox hidden"
     name="terms-and-conditions" id="terms-and-conditions"
-    type="checkbox" value="agree">
+    type="checkbox">
+    
     Oświadczam iż akceptuję&nbsp;
     <a href="x">Regulamin</a> &nbsp;i&nbsp; 
     <a href="x">Politykę Prywatności.</a>

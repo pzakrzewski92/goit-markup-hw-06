@@ -830,10 +830,14 @@ padding: 93px 40px 40px;
     border-radius: 4px;
     
 }
-.modal-window-form-input:focus, .modal-window-form-input:hover,
-.modal-window-form-input:active{
-    border: 1px solid #2196F3;
-border-radius: 4px;
+.modal-window-form-textarea:hover,
+.modal-window-textarea:focus,
+.modal-window-textarea:active,
+.modal-window-form-input:hover,
+.modal-window-form-input:focus,
+.modal-window-form-input:active {
+  border: 1px solid #2196f3;
+  outline: none;
 }
 .modal-icon-contact {
     position: absolute;
@@ -862,52 +866,55 @@ height: 18px;
     transition: var(--transition)
 }
 .modal-window-application-signup-form-textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     color: rgba(117, 117, 117, 0.5);
   }
 
-  /*
-  .bg-image-name {
-    background-image: url(/images/icons.svg#icon-icon-person-form);
-    background-repeat: no-repeat;
-    background-position: left 15px center;
-    transition: background-image var(--transition);
-  }
-  
-  .bg-image-name:hover,
-  .bg-image-name:focus,
-  .bg-image-name:active {
-    background-image: url(/images/icons.svg#icon-icon-person-form);
-   }
-  
-  .bg-image-phone {
-    background-image: url(/images/icons.svg#icon-icon-phone-form);
-    background-repeat: no-repeat;
-    background-position: left 15px center;
-    transition: background-image var(--transition);
-  }
-  
-  .bg-image-phone:hover,
-  .bg-image-phone:focus,
-  .bg-image-phone:active {
-    background-image: url(/images/icons.svg#icon-icon-phone-form);
+.bg-image-name {
+    position: absolute;
+    left: 52px;
+    top: 116px;
+width: 18px;
+height: 18px;
+
 }
-  
-  .bg-image-email {
-    background-image: url(/images/icons.svg#icon-icon-envelope-form);
-    background-repeat: no-repeat;
-    background-position: left 15px center;
-    transition: background-image var(--transition);
-  }
-  
-  .bg-image-email:hover,
-  .bg-image-email:focus,
-  .bg-image-email:active {
-    background-image: url(/images/icons.svg#icon-icon-envelope-form);
-}*/
+.bg-image-name:hover,
+.bg-image-name:focus,
+.bg-image-name:active {
+    fill: #2196F3;
+}
+
+.bg-image-phone {
+    position: absolute;
+    left: 52px;
+    top: 187px;
+width: 18px;
+height: 18px;
+}
+.bg-image-phone:hover,
+.bg-image-phone:focus,
+.bg-image-phone:active {
+    fill: #2196F3;
+}
+.bg-image-email {
+    position: absolute;
+    left: 52px;
+    top: 259px;
+width: 18px;
+height: 18px;
+}
+.bg-image-email:hover,
+.bg-image-email:focus,
+.bg-image-email:active {
+  fill: #2196F3;
+}
 .modal-window-form-terms {
     display: inline-flex;
     align-items: center;
     align-self: center;
+    justify-content: center;
     width: 100%;
     font-size: 14px;
     line-height: 1.71;
@@ -923,7 +930,7 @@ height: 18px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.modal-window-form-terms input {
+.modal-window-form-terms::before {
 margin-right: 8px;
 }
 
