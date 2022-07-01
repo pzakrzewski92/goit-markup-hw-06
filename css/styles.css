@@ -958,7 +958,7 @@ margin-right: 8px;
 }
 
 .modal-window-form-terms::before{
-    display: inline-block;
+    display: none;
     content: "";
     width: 16px;
     height: 16px;
@@ -966,9 +966,10 @@ margin-right: 8px;
     margin-right: 8px;
 }
 .modal-window-form-checkbox:checked + .modal-window-form-terms::before {
-   fill: #2196F3;
+   background-image: url(/images/vector-checkbox-checked.svg);
    border: 3px solid #fff;
-   background-image: url(../images/icon-checkbox-vector.svg);
+   background-color: #2196F3;
+  
 }
 .hidden {
     display: none;
