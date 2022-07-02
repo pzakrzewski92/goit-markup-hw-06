@@ -828,7 +828,7 @@ padding: 93px 40px 40px;
     padding: 12px 12px 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    
+    outline: none;
 }
 .modal-window-form-textarea:hover,
 .modal-window-textarea:focus,
@@ -869,7 +869,8 @@ height: 18px;
     border-radius: 4px;
     resize: none;
     margin-bottom: 20px;
-    transition: var(--transition)
+    transition: var(--transition);
+    outline: none;
 }
 .modal-window-application-signup-form-textarea::placeholder {
     font-family: 'Roboto';
@@ -884,7 +885,7 @@ height: 18px;
     top: 116px;
 width: 18px;
 height: 18px;
-
+transition: background-image var(--transition);
 }
 
 .bg-image-name:hover,
@@ -899,6 +900,7 @@ height: 18px;
     top: 187px;
 width: 18px;
 height: 18px;
+transition: background-image var(--transition);
 }
 .bg-image-phone:hover,
 .bg-image-phone:focus,
@@ -911,6 +913,7 @@ height: 18px;
     top: 259px;
 width: 18px;
 height: 18px;
+transition: background-image var(--transition);
 }
 .bg-image-email:hover,
 .bg-image-email:focus,
@@ -930,6 +933,7 @@ height: 18px;
     margin-bottom: 30px;
 }
 
+
 .modal-window-form-terms a {
     text-decoration: underline;
     color: #2196f3;
@@ -937,7 +941,9 @@ height: 18px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
+.hidden {
+    display: none;
+}
 
 .modal-window-form-checkbox {
     /* Oświadczam iż akceptuję Regulamin i Politykę Prywatności. */
@@ -957,8 +963,8 @@ height: 15px;
 margin-right: 8px;
 }
 
-.modal-window-form-terms::before{
-    display: none;
+.modal-window-form-terms::before {
+    display: inline-block;
     content: "";
     width: 16px;
     height: 16px;
@@ -966,7 +972,7 @@ margin-right: 8px;
     margin-right: 8px;
 }
 .modal-window-form-checkbox:checked + .modal-window-form-terms::before {
-   background-image: url(/images/vector-checkbox-checked.svg);
+  background-image: url(/images/vector-checkbox-checked.svg);
    border: 3px solid #fff;
  
   
