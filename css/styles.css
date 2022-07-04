@@ -941,13 +941,12 @@ transition: background-image var(--transition);
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-.hidden {
-    display: none;
-}
+
 
 .modal-window-form-checkbox {
     /* Oświadczam iż akceptuję Regulamin i Politykę Prywatności. */
-
+position: absolute;
+opacity: 0;
 max-width: 395px;
 height: 24px;
 font-family: 'Roboto';
@@ -978,7 +977,7 @@ margin-right: 8px;
   
 }
 .hidden {
-    display: none;
+   
 }
   
 
