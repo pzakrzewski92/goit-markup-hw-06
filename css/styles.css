@@ -960,6 +960,7 @@ color: #757575;
 width: 16px;
 height: 15px;
 margin-right: 8px;
+background-image: url(/images/icon-checkbox-vector.svg);
 }
 
 .modal-window-form-terms::before {
@@ -970,12 +971,16 @@ margin-right: 8px;
     outline: 1px solid #000;
     margin-right: 8px;
 }
-.modal-window-form-terms:checked + .modal-window-form-terms-label::before {
-  background-image: url(/images/vector-checkbox-checked.svg);
+.modal-window-form-checkbox:checked + .modal-window-form-terms::before {
+  background-image: "/images/icon-checkbox-vector.svg";
    border: 3px solid #fff;
+   background-color: #2196F3;
+   outline: none;
 }
 
-  
+.hidden {
+
+}
 
 .modal-window-form-button {
     align-self: center;
