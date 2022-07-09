@@ -972,14 +972,14 @@ background-image: url(/images/icon-checkbox-vector.svg);
     margin-right: 8px;
 }
 .modal-window-form-checkbox:checked + .modal-window-form-terms::before {
-  background-image: "/images/icon-checkbox-vector.svg";
+  background-image: '/images/icon-checkbox-vector.svg';
    border: 3px solid #fff;
    background-color: #2196F3;
    outline: none;
 }
 
-.hidden {
-
+.hidden::before {
+    background-image: "/images/icon-checkbox-vector.svg";
 }
 
 .modal-window-form-button {
