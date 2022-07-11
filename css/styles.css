@@ -838,7 +838,7 @@ label:focus-within
 { fill: #2196F3;
     transition: var(--transition);
 }
-/*
+
 .modal-window-form-textarea:hover,
 .modal-window-textarea:focus,
 .modal-window-textarea:active,
@@ -848,7 +848,7 @@ label:focus-within
 {
     border: 1px solid #2196F3;
     border-radius: 4px;
-}*/
+}
 
 /*
 {
@@ -901,12 +901,12 @@ width: 18px;
 height: 18px;
 transition: background-image var(--transition);
 }
-/*
+
 .bg-image-name:hover,
 .bg-image-name:focus,
 .bg-image-name:active {
     fill: #2196F3;
-}*/
+}
 
 .bg-image-phone {
     position: absolute;
@@ -916,12 +916,12 @@ width: 18px;
 height: 18px;
 transition: background-image var(--transition);
 }
-/*
+
 .bg-image-phone:hover,
 .bg-image-phone:focus,
 .bg-image-phone:active {
     fill: #2196F3;
-}*/
+}
 .bg-image-email {
     position: absolute;
     left: 52px;
@@ -930,13 +930,13 @@ width: 18px;
 height: 18px;
 transition: background-image var(--transition);
 }
-/*
+
 .bg-image-email:hover,
 .bg-image-email:focus,
 .bg-image-email:active {
   fill: #2196F3;
 }
-*/
+
 .modal-window-form-terms {
     display: inline-flex;
     align-items: center;
